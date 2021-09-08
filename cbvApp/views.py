@@ -18,6 +18,7 @@ class StudentPagination(PageNumberPagination) :
     page_size = 4
 
 # using viewsets
+# this is rohan branch so this comment will not seen in master branch
 class StudentViewSet(viewsets.ModelViewSet) :
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
