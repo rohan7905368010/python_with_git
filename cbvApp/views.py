@@ -17,7 +17,7 @@ from rest_framework import filters
 class StudentPagination(PageNumberPagination) : 
     page_size = 4
 
-# using viewsets this is all about 
+# using viewsets
 class StudentViewSet(viewsets.ModelViewSet) :
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
